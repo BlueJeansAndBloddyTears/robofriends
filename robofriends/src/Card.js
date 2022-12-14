@@ -1,8 +1,8 @@
 //import React, {Component} from "react";
 import React from "react";
 
-const Card = (props) => {
-    const {name, email, id} = props; 
+const Card = ({name, email, id}) => {
+  //  const {name, email, id} = props; 
     return (
         //we need to make sure that we 
         //return one thing
