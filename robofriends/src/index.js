@@ -1,19 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Hello from './Hello';
+import Card from './Card';
 import 'tachyons';
 
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//<Hello greeting ={'Hello ' + 'React Ninja'}/>
+
 root.render(
 
     //we are using props here like greeting
-    
+
   <React.StrictMode>
-  
-    <Hello greeting ={'Hello ' + 'React Ninja'}/>
+  <Card />
   </React.StrictMode>
 );
 
