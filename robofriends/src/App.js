@@ -14,6 +14,11 @@ import {robots} from './robots';
 // not like we have now as a function const app ...
 //but as a class which extends react component 
 
+const state = {
+    robots: robots,
+    searchfield : ''
+}
+
 const App = () => {
     return (
         <div>
