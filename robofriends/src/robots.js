@@ -1,3 +1,7 @@
+//didn't use default cause we can use
+//multiple stuff to export
+//default would make 
+//us to export only one thing.
 export const robots = [
     {
       id: 1,

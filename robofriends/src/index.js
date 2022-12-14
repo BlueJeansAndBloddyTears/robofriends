@@ -7,7 +7,9 @@ import 'tachyons';
 //getting info on robots 
 //from robots.js where we have an
 //object there that we can use
-import robots from './robots';
+import {robots} from './robots';
+//we need to destructure it
+//we could have robots, cats multiple ones
 
 //import reportWebVitals from './reportWebVitals';
 
@@ -17,13 +19,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
     //we are using props here like greeting
+  // we are using props here
+  //getting data from robots.js like
+  //id, name, email.
 
   <React.StrictMode>
     <div>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      
+      <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
+      <Card id={robots[1].id} name={robots[1].name} email={robots[1].email}/>
+      <Card id={robots[2].id} name={robots[2].name} email={robots[2].email}/>
+      <Card id={robots[3].id} name={robots[3].name} email={robots[3].email}/>
+
     </div>
   </React.StrictMode>
 );
