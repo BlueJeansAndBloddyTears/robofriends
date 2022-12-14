@@ -42,6 +42,21 @@ import React from "react";
 //     );
 // }
 
+// Read about what does
+// Strict Mode do
+// https://reactjs.org/docs/strict-mode.html
+
+// StrictMode is a tool for highlighting 
+// potential problems in an application. Like Fragment, 
+// StrictMode does not render any visible UI. 
+// It activates additional checks and warnings for 
+// its descendants.
+
+// Note:
+
+// Strict mode checks are run in development mode only;
+// they do not impact the production build.
+
 const Card = ({name, email, id}) => {
   //  const {name, email, id} = props; 
     return (
