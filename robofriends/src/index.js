@@ -4,6 +4,11 @@ import './index.css';
 import Card from './Card';
 import 'tachyons';
 
+//getting info on robots 
+//from robots.js where we have an
+//object there that we can use
+import robots from './robots';
+
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +19,12 @@ root.render(
     //we are using props here like greeting
 
   <React.StrictMode>
-  <Card />
+    <div>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </div>
   </React.StrictMode>
 );
 
