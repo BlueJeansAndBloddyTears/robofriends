@@ -2,10 +2,13 @@ import React, {Component} from 'react';
 //this is called destructuring
 import './Hello.css';
 
-class Hello extends Component {
-    render() {
+//the class Hello can be turned into a function
+//because these are just functions
+//working example on how
+//this can we written in another way
 
-        return (
+const Hello = (props) => {
+    return (
         //this is jsx it creates its virtual dom 
         //so we use className instead of class
         //only changes what needs to.
@@ -14,10 +17,13 @@ class Hello extends Component {
         <div className='f1 tc' >
         <h1>Hello World</h1>
         <p>Welcome to React</p>
-        <p>{this.props.greeting}</p>
+        <p>{props.greeting}</p>
         </div>
         )
-    }
+
+    //we're using props no need for
+    // this before props 
+
 }
 
 export default Hello;
