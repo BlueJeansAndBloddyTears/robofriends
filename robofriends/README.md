@@ -1,4 +1,4 @@
-View here: (Robofriends App)[BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends]
+View here: [Robofriends App](https://BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends)
 
 # Getting Started with Create React App
 
