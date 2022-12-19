@@ -4,14 +4,14 @@ import './index.css';
 //import Card from './Card';
 //import CardList from './CardList';
 
-import App from './App';
+import App from './containers/App';
 
 import 'tachyons';
 
 //getting info on robots 
 //from robots.js where we have an
 //object there that we can use
-import {robots} from './robots';
+import {robots} from './containers/robots';
 //we need to destructure it
 //we could have robots, cats multiple ones
 

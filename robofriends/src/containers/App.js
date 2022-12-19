@@ -1,7 +1,7 @@
 import React, {Component} from "react";
-import CardList from './CardList';
-import Searchbox from './Searchbox';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import Searchbox from '../components/Searchbox';
+import Scroll from '../components/Scroll';
 import {robots} from './robots';
 
 //we need a STATE which describes our application
