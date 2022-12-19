@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import CardList from './CardList';
 import Searchbox from './Searchbox';
+import Scroll from './Scroll';
 import {robots} from './robots';
 
 //we need a STATE which describes our application
@@ -50,7 +51,9 @@ this.setState({searchfield: event.target.value})
             <div>
                 <h1 className="tc">RoboFriends</h1>
                 <Searchbox searchChange={this.onSearchChange}/>
+                <Scroll>
                 <CardList robots={filteredRobots} />
+                </Scroll>
             </div>
         );
     }
