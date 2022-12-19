@@ -3,6 +3,7 @@ import CardList from '../components/CardList';
 import Searchbox from '../components/Searchbox';
 import Scroll from '../components/Scroll';
 import {robots} from './robots';
+import './App.css';
 
 //we need a STATE which describes our application
 // in order to to change what robots get displayed
