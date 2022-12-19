@@ -43,10 +43,16 @@ this.setState({searchfield: event.target.value})
 
 
     render() {
-        const filteredRobots = this.state.robots.filter(robots =>{
-            return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+        const {robots, searchfield} = this.state;
+        const filteredRobots = robots.filter(robot =>{
+            return robot.name.toLowerCase().includes(searchfield.toLowerCase());
 
     })
+    if (!robots.length) {
+    
+        return  <h1>Loading...</h1>
+
+    } else {
         return (
             <div>
                 <h1 className="tc">RoboFriends</h1>
@@ -56,6 +62,7 @@ this.setState({searchfield: event.target.value})
                 </Scroll>
             </div>
         );
+            }
     }
 }
 

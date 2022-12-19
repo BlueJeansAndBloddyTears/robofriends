@@ -11,7 +11,7 @@ import 'tachyons';
 //getting info on robots 
 //from robots.js where we have an
 //object there that we can use
-import {robots} from './containers/robots';
+//import {robots} from './containers/robots';
 //we need to destructure it
 //we could have robots, cats multiple ones
 

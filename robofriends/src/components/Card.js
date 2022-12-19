@@ -7,22 +7,22 @@ import React from "react";
 //can use Fragment in order to avoid
 // adding unnecesarry divs to the DOM
 
-{/* <Fragment>
+/* <Fragment>
 <p>Q. What is React?</p>
 <p>A. A JavaScript library for building user interfaces</p>
 <p>Q. How do I render sibling elements?</p>
 <p>A. Use Fragments</p>
-</Fragment> */}
+</Fragment> */
 
 //or using the shorthand <> </> if
 //not using keys
 
-{/* <>
+/* <>
 <p>Q. What is React?</p>
 <p>A. A JavaScript library for building user interfaces</p>
 <p>Q. How do I render sibling elements?</p>
 <p>A. Use Fragments</p>
-</> */}
+</> */
 
 // The only thing that the shorthand syntax doesn’t support
 // for now is adding a key. This could be problematic
