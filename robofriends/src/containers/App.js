@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import CardList from '../components/CardList';
 import Searchbox from '../components/Searchbox';
 import Scroll from '../components/Scroll';
-import {robots} from './robots';
+//import {robots} from './robots';
 import './App.css';
 
 //we need a STATE which describes our application
@@ -56,27 +56,25 @@ this.setState({searchfield: event.target.value})
 
 
     render() {
-        const {robots, searchfield} = this.state;
-        const filteredRobots = robots.filter(robot =>{
+        const { robots, searchfield } = this.state;
+        const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchfield.toLowerCase());
 
-    })
-    //console.log('render');
-    if (!robots.length) {
-    
-        return  <h1>Loading...</h1>
+        })
+        //console.log('render');
+        return !robots.length ?
+            <h1>Loading...</h1> :
 
-    } else {
-        return (
-            <div>
-                <h1 className="tc">RoboFriends</h1>
-                <Searchbox searchChange={this.onSearchChange}/>
-                <Scroll>
-                <CardList robots={filteredRobots} />
-                </Scroll>
-            </div>
-        );
-            }
+            (
+                <div>
+                    <h1 className="tc">RoboFriends</h1>
+                    <Searchbox searchChange={this.onSearchChange} />
+                    <Scroll>
+                        <CardList robots={filteredRobots} />
+                    </Scroll>
+                </div>
+            );
+
     }
 }
 
