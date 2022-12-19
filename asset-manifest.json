@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends/static/css/main.c7035641.css",
-    "main.js": "/BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends/static/js/main.087918ea.js",
-    "static/media/SEGA.woff": "/BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
-    "index.html": "/BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends/index.html",
-    "main.c7035641.css.map": "/BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends/static/css/main.c7035641.css.map",
-    "main.087918ea.js.map": "/BlueJeansAndBloddyTears.github.io/robofriends/tree/main/robofriends/static/js/main.087918ea.js.map"
+    "main.css": "/BlueJeansAndBloddyTears.github.io/robofriends/static/css/main.b6b17804.css",
+    "main.js": "/BlueJeansAndBloddyTears.github.io/robofriends/static/js/main.087918ea.js",
+    "static/media/SEGA.woff": "/BlueJeansAndBloddyTears.github.io/robofriends/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/BlueJeansAndBloddyTears.github.io/robofriends/index.html",
+    "main.b6b17804.css.map": "/BlueJeansAndBloddyTears.github.io/robofriends/static/css/main.b6b17804.css.map",
+    "main.087918ea.js.map": "/BlueJeansAndBloddyTears.github.io/robofriends/static/js/main.087918ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7035641.css",
+    "static/css/main.b6b17804.css",
     "static/js/main.087918ea.js"
   ]
 }
