@@ -22,11 +22,23 @@ class App extends Component {
     constructor() {
     super()
       this.state = {
-        robots: robots,
+        robots: [],
         searchfield : ''
     }
-    
+//console.log('constructor');
 }
+
+//using live cycle hooks
+//componentDidMount gets rendered after render()
+
+componentDidMount() {
+  //  console.log('componentDidMount');
+  //  this.setState({robots: robots});
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(users=>this.setState({ robots: users}));
+} //fetch is a methos of the window object eg: window.fetch in console
+
 onSearchChange = (event) => {
 
 
@@ -49,6 +61,7 @@ this.setState({searchfield: event.target.value})
             return robot.name.toLowerCase().includes(searchfield.toLowerCase());
 
     })
+    //console.log('render');
     if (!robots.length) {
     
         return  <h1>Loading...</h1>
